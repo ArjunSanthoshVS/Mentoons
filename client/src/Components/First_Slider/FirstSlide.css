@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-top: 10px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.items {
+    margin: 10px;
+    padding: 10px;
+}
+
+.one{
+    width: 240px;
+}
+.two{
+    width: 124px;
+}
+.three{
+    width: 130px;
+}
+.four{
+    width: 190px;
+}
+.five{
+    width: 160px;
+}
+.six{
+    width: 250px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        overflow-x: scroll;
+        justify-content: flex-start;
+        padding: 0;
+    }
+        .one {
+            width: 210px;
+        }
+    
+        .two {
+            width: 109px;
+        }
+    
+        .three {
+            width: 115px;
+        }
+    
+        .four {
+            width: 167px;
+        }
+    
+        .five {
+            width: 141px;
+        }
+    
+        .six {
+            width: 221px;
+        }
+}
