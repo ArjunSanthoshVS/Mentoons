@@ -1,0 +1,145 @@
+.category-img {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.background {
+  background-color: #edeff0;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  margin: 40px;
+}
+
+.help {
+  display: flex;
+}
+
+.help-you-img {
+  width: 250px;
+  margin-left: auto;
+  box-shadow: 0px 2px 5px -3px black;
+}
+
+.banner {
+  width: 30%;
+  box-shadow: 0px -2px 11px -7px black;
+  margin-bottom: 20px;
+}
+
+.banners {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.starter-card-img {
+  width: 100%;
+  position: relative;
+}
+
+.buy-now {
+  position: absolute;
+  margin-top: 36%;
+  left: 60%;
+  width: 20%;
+  z-index: 1;
+}
+
+.customer-reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-reviews-img {
+  width: 28%;
+  margin-bottom: 30px;
+}
+
+.deepanjali {
+  width: 100%;
+}
+
+.view-all {
+  margin: 50px auto;
+}
+
+.prep-pers {
+  display: flex;
+}
+
+.prep-pers-img {
+  margin: 0 auto;
+  width: 94%;
+}
+
+.top-section{
+    display: flex;
+    margin-top: 7%;
+}
+.customer-review-product-img {
+  width: 60%;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+.arrows {
+    width: 100%; 
+    justify-content: end; 
+}
+
+.left-arrow{
+    width: 20%;
+        margin-left: 30%;
+}
+.right-arrow {
+    width: 20%;
+    margin-left: 10%;
+}
+
+.blue-card{
+    margin-left: 9%;
+}
+
+.blue{
+    width: 33%;
+}
+
+.rishi{
+    width: 37.1%;
+}
+
+.girl{
+    width: 24.1%;
+    margin-left: 2%;
+}
+
+.bottom-section{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .help-you-img {
+    margin: 0 auto;
+  }
+  .banners {
+    flex-direction: column;
+  }
+  .banner {
+    width: 100%;
+  }
+  .buy-now {
+    position: absolute;
+    margin-top: 26%;
+    left: 60%;
+    width: 15%;
+    z-index: 1;
+  }
+  .customer-reviews-img {
+    width: 28%;
+    margin-bottom: 20px;
+  }
+  .view-all {
+    margin: 20px auto;
+  }
+}
