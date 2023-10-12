@@ -1,5 +1,8 @@
 import './Category.css'
 const Category = () => {
+    const addToCart = () => {
+
+    }
     return (
         <>
             <img className="category-img" src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-10.png" alt="" />
@@ -8,9 +11,18 @@ const Category = () => {
                     <img className='help-you-img' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-11.png" alt="" />
                 </div>
                 <div className="banners">
-                    <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-24.png" alt="" />
-                    <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-25.png" alt="" />
-                    <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-26.png" alt="" />
+                    <div className="image-container">
+                        <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-24.png" alt="" /><br />
+                        <button className="bn39" onClick={addToCart(1)}><span className="bn39span">Add to Cart</span></button>
+                    </div>
+                    <div className="image-container">
+                        <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-25.png" alt="" /><br />
+                        <button className="bn39" onClick={addToCart(1)}><span className="bn39span">Add to Cart</span></button>
+                    </div>
+                    <div className="image-container">
+                        <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-26.png" alt="" /><br />
+                        <button className="bn39" onClick={addToCart(1)}><span className="bn39span">Add to Cart</span></button>
+                    </div>
                 </div>
                 <div className="starter-card">
                     <img className='starter-card-img' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-12.png" alt="" />

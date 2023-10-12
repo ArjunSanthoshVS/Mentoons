@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import './Navbar.css'
 
-const Navbar = () => {
+const   Navbar = () => {
   const navRef = useRef(null);
 
   const showNavbar = () => {
