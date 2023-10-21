@@ -1,0 +1,48 @@
+.coming_soon_section {
+  position: relative;
+}
+
+.back_img {
+  width: 100%;
+  height: auto;
+}
+
+.coming_soon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.coming_soon_img {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  margin-top: 8%;
+  display: flex;
+}
+
+.you_thumb {
+  width: 36%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.you_thumb_img {
+  width: 45%;
+}
+
+.stay_updated {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+
+.subscribe_btn {
+  position: absolute;
+  top: 83%;
+  left: 41%;
+  width: 16%;
+}

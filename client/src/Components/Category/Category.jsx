@@ -1,7 +1,19 @@
+import axios from 'axios';
 import './Category.css'
+// import { useNavigate } from 'react-router-dom';
 const Category = () => {
-    const addToCart = () => {
-
+    // const navigate=useNavigate()
+    const user = JSON.parse(localStorage.getItem("user"))
+    const userId = user?.user?._id
+    const addToCart = async (item) => {
+        console.log(item);
+        try {
+            const response = await axios.post("http://localhost:5000/add_to_cart", { item, userId })
+            console.log(response);
+            // navigate('/cart')
+        } catch (err) {
+            alert("Already Existing..!")
+        }
     }
     return (
         <>
@@ -13,15 +25,15 @@ const Category = () => {
                 <div className="banners">
                     <div className="image-container">
                         <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-24.png" alt="" /><br />
-                        <button className="bn39" onClick={addToCart(1)}><span className="bn39span">Add to Cart</span></button>
+                        <button className="bn39" onClick={() => addToCart({ product: 'Kalakriti Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
                     </div>
                     <div className="image-container">
                         <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-25.png" alt="" /><br />
-                        <button className="bn39" onClick={addToCart(1)}><span className="bn39span">Add to Cart</span></button>
+                        <button className="bn39" onClick={() => addToCart({ product: 'Hasyaras Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
                     </div>
                     <div className="image-container">
                         <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-26.png" alt="" /><br />
-                        <button className="bn39" onClick={addToCart(1)}><span className="bn39span">Add to Cart</span></button>
+                        <button className="bn39" onClick={() => addToCart({ product: 'Instatnt Kadha Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
                     </div>
                 </div>
                 <div className="starter-card">

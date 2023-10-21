@@ -24,8 +24,8 @@ const Login = () => {
         console.log(user);
         try {
             const response = await axios.post(`${apiUrl}/login`, user)
-            console.log(response)
-            navigate('/')
+            localStorage.setItem("user", JSON.stringify(response.data));
+            window.location('/')
         } catch (err) {
             console.log(err.message)
         }

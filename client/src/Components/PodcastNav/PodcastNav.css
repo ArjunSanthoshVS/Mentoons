@@ -1,0 +1,103 @@
+.podcast-navbar {
+ position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+    color: #EEEEEE;
+    font-weight: bold;
+    z-index: 100;
+    background-color: transparent;
+}
+
+.podacst-logo {
+   width: 220px;
+    margin-left: 10px;
+}
+
+.podcast-navbar .nav-btn{
+ padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #EEEEEE;
+    display: none;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+.podcast-navbar div,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+  background-color: black;
+  height: 31%;
+  border-radius: 45px 45px 45px 45px;
+}
+
+.main-item {
+  color: white;
+  font-weight: bolder;
+  padding: 4px;
+  margin: 0 auto;
+}
+
+.item {
+  margin: 20px;
+  font-weight: bolder;
+  color: black;
+}
+.search {
+  margin: auto;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  background-color: white;
+  border-radius: 45px 45px 45px 45px;
+  border-color: darkgrey;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.options {
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .podcast-navbar .nav-btn {
+        display: block;
+        opacity: 1;
+    }
+
+    .podcast-navbar nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: #337CCF;
+        transition: 1s;
+        z-index: 1;
+        /* Ensure navbar is above content */
+    }
+
+    .podcast-navbar .responsive_nav {
+        transform: translateY(100vh);
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+}

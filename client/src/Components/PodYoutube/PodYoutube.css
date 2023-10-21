@@ -1,0 +1,38 @@
+.containerStyle {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.overlayImageStyle {
+  position: absolute;
+  top: 0;
+}
+
+.listening {
+  width: 35%;
+}
+
+.youtube {
+  width: 60%;
+}
+
+.thumbnail {
+  width: 28%;
+}
+
+.bg_lamp{
+    position: relative;
+}
+
+.submit_form{
+    position: absolute;
+    top: 58%;
+    left: 31%;
+}
+.submit_button{
+    position: absolute;
+    top: 84%;
+    left: 36%;
+    width: 14%;
+}
