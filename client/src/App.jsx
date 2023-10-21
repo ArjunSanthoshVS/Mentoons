@@ -15,11 +15,13 @@ function App() {
         {user && <Route path="/" exact element={<Home />} />}
         {user && <Route path="/register" exact element={<Navigate replace to='/' />} />}
         {user && <Route path="/login" exact element={<Navigate replace to='/' />} />}
+        {user && <Route path='/cart' exact element={<Cart />} />}
+        {user && <Route path='/podcast' exact element={<Podcast />} />}
         <Route path="/" exact element={<Navigate replace to='/login' />} />
         <Route path='/register' exact element={<Register />} />
         <Route path='/login' exact element={<Login />} />
-        <Route path='/cart' exact element={<Cart />} />
-        <Route path='/podcast' exact element={<Podcast />} />
+        <Route path='/cart' exact element={<Navigate replace to='/' />} />
+        <Route path='/podcast' exact element={<Navigate replace to='/' />} />
       </Routes>
     </>
   )

@@ -25,15 +25,15 @@ const Category = () => {
                 <div className="banners">
                     <div className="image-container">
                         <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-24.png" alt="" /><br />
-                        <button className="bn39" onClick={() => addToCart({ product: 'Kalakriti Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
+                        <button className="bn39 d-flex m-auto mt-3" onClick={() => addToCart({ product: 'Kalakriti Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
                     </div>
                     <div className="image-container">
                         <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-25.png" alt="" /><br />
-                        <button className="bn39" onClick={() => addToCart({ product: 'Hasyaras Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
+                        <button className="bn39  d-flex m-auto mt-3" onClick={() => addToCart({ product: 'Hasyaras Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
                     </div>
                     <div className="image-container">
                         <img className='banner' src="/Welcome to MENTOONS shopping (1)/PNG/Welcome to MENTOONS shopping-26.png" alt="" /><br />
-                        <button className="bn39" onClick={() => addToCart({ product: 'Instatnt Kadha Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
+                        <button className="bn39  d-flex m-auto mt-3" onClick={() => addToCart({ product: 'Instatnt Kadha Workshop', price: 500 })}><span className="bn39span">Add to Cart</span></button>
                     </div>
                 </div>
                 <div className="starter-card">

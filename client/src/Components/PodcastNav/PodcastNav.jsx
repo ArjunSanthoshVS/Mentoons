@@ -1,6 +1,8 @@
 import { useRef } from 'react';
 import './PodcastNav.css'
+import { useNavigate } from 'react-router-dom';
 const PodcastNav = () => {
+    const navigate = useNavigate()
     const navRef = useRef(null);
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
@@ -19,6 +21,7 @@ const PodcastNav = () => {
                             <p className='item'>COMICS</p>
                             <p className='item'>AUDIO COMICS</p>
                             <p className='item'>PEPPERS</p>
+                            <p className='item' style={{cursor:"pointer"}} onClick={() => { navigate('/') }}>PRODUCTS</p>
                         </div>
                         <div className="search ps-2 me-4">
                             <input type="text" />

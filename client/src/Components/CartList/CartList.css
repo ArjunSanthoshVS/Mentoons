@@ -1,0 +1,47 @@
+/* CartList.css */
+
+.cart-page {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  width: 50%;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-items div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+}
+
+.cart-total {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #53B2D0;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Add more styles as needed to enhance the appearance. */

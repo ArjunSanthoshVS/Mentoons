@@ -24,16 +24,13 @@ const Register = () => {
         e.preventDefault();
         const response = await axios.post(`${apiUrl}/register`, formData)
         console.log(response);
-        setFormData({
-            name: '',
-            email: '',
-            password: '',
-        });
+        navigate('/login')
     };
 
     return (
         <div className="border border-5 card w-50 text-center p-5 m-auto mt-5">
-            <h2>Registration Form</h2>
+            <img className="m-auto" src="/logo.png" alt="" />
+            <h2><b>Registration</b></h2>
             <form onSubmit={handleSubmit}>
                 <div className="m-4">
                     <label htmlFor="name">First Name:</label>

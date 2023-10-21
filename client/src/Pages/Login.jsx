@@ -25,7 +25,7 @@ const Login = () => {
         try {
             const response = await axios.post(`${apiUrl}/login`, user)
             localStorage.setItem("user", JSON.stringify(response.data));
-            window.location('/')
+            window.location.reload()
         } catch (err) {
             console.log(err.message)
         }
@@ -33,7 +33,8 @@ const Login = () => {
 
     return (
         <div className="border border-5 card w-50 text-center p-5 m-auto mt-5">
-            <h2>Login</h2>
+            <img className="m-auto" src="/logo.png" alt="" />
+            <h2><b>Login</b></h2>
             <form onSubmit={handleSubmit}>
                 <div className="m-4">
                     <label htmlFor="email">email:</label>

@@ -4,6 +4,10 @@ const userSchema = new mongoose.Schema({
     name: String,
     email: String,
     password: String,
+    hasPurchasedPack: {
+        type: Boolean,
+        default: false,
+    },
 });
 
 
